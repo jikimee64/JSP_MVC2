@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Amado_JSP(MVC2):war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Amado_JSP(MVC2)/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Amado_JSP(MVC2)" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="JAX-WS-Apache Axis" />
+          <element id="library" level="project" name="javax.servlet:javax.servlet-api:4.0.1" />
+          <element id="library" level="project" name="org.apache.tomcat:servlet-api:6.0.53" />
+          <element id="library" level="project" name="tomcat:servlet:4.1.36" />
+          <element id="library" level="project" name="cos" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

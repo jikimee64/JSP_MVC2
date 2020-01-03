@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="cos">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/commom_lib/cos.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commom_lib/jsp-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commom_lib/mysql-connector-java-8.0.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commom_lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commom_lib/taglibs-standard-impl-1.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commom_lib/taglibs-standard-jstlel-1.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/commom_lib/taglibs-standard-spec-1.2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
