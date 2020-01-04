@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Dashboard</title>
+    <title>Amado - Profile</title>
 
     <!-- Custom fonts for this template-->
     <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -24,6 +24,10 @@
 
 </head>
 <body id="page-top">
+<c:if test="${sessionID != null }">
+    ${sessionID } 로그인 중
+</c:if>
+
 
 <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
@@ -108,8 +112,9 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                 <h6 class="dropdown-header">Login Screens:</h6>
-                <a class="dropdown-item" href="login.html">Login</a>
+                <a class="dropdown-item" href="login.do">Login</a>
                 <a class="dropdown-item" href="join.do">Register</a>
+                <a class="dropdown-item" href="modify.do">Modify</a>
                 <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
                 <div class="dropdown-divider"></div>
                 <h6 class="dropdown-header">Other Pages:</h6>
@@ -118,14 +123,9 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="charts.html">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Charts</span></a>
-        </li>
-        <li class="nav-item">
             <a class="nav-link" href="tables.html">
                 <i class="fas fa-fw fa-table"></i>
-                <span>Tables</span></a>
+                <span>Board</span></a>
         </li>
     </ul>
 
@@ -167,7 +167,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="logout.do">Logout</a>
                 </div>
             </div>
         </div>

@@ -84,7 +84,7 @@
                 <input type="submit" class="btn btn-primary btn-block" value="Register" id="signUp" />
             </form>
             <div class="text-center">
-                <a class="d-block small mt-3" href="login.html">Login Page</a>
+                <a class="d-block small mt-3" href="login.do">Login Page</a>
                 <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
             </div>
         </div>
