@@ -29,6 +29,8 @@
 </c:if>
 
 
+
+
 <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
     <a class="navbar-brand mr-1" href="main.do">Start Bootstrap</a>
@@ -111,11 +113,11 @@
                 <span>Pages</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                <h6 class="dropdown-header">Login Screens:</h6>
+                <h6 class="dropdown-header">Screens:</h6>
                 <a class="dropdown-item" href="login.do">Login</a>
                 <a class="dropdown-item" href="join.do">Register</a>
                 <a class="dropdown-item" href="modify.do">Modify</a>
-                <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+                <a class="dropdown-item" href="searchPw.do">Forgot Password</a>
                 <div class="dropdown-divider"></div>
                 <h6 class="dropdown-header">Other Pages:</h6>
                 <a class="dropdown-item" href="404.html">404 Page</a>

@@ -2,6 +2,8 @@
          pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -10,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Amado - Login</title>
+    <title>SB Admin - SearchPw</title>
 
     <!-- Custom fonts for this template-->
     <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,33 +24,19 @@
 
 <body class="bg-dark">
 
-<c:if test="${ searchPwResult == 1}">
+<c:if test="${ searchPwResult == 0}">
     <script>
-        alert("비밀번호는 ${dto.userPassword} 입니다.");
-    </script>
-</c:if>
-
-
-
-<c:if test="${sessionID != null }">
-    <script>
-        alert("이미 로그인 중입니다.");
-        location.href = "main.do";
-    </script>
-</c:if>
-
-<c:if test="${ loginResult == -1 || loginResult == 0}">
-    <script>
-        alert("아이디 혹은 비밀번호가 틀렸습니다.");
+        alert("일치하는 회원정보가 없습니다.");
     </script>
 </c:if>
 
 
 <div class="container">
-    <div class="card card-login mx-auto mt-5">
-        <div class="card-header">Login</div>
+    <div class="card card-register mx-auto mt-5">
+        <div class="card-header">Search Password an Account</div>
         <div class="card-body">
-            <form action="login.do" method="post">
+            <form action="searchPw.do" method="post">
+
                 <div class="form-group">
                     <div class="form-label-group">
                         <input type="text" name="userID" id="userID" class="form-control" placeholder="userID"
@@ -56,17 +44,27 @@
                         <label for="userID">ID</label>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <div class="form-label-group">
-                        <input type="password" name="userPassword" id="userPassword" class="form-control" placeholder="Password" required="required">
-                        <label for="userPassword">Password</label>
+                        <input type="text" name="userName" id="userName" class="form-control" placeholder="Full name"
+                               required="required">
+                        <label for="userName">Full Name</label>
                     </div>
                 </div>
-                <input type="submit" class="btn btn-primary btn-block" value="Register" id="login" />
+
+                <div class="form-group">
+                    <div class="form-label-group">
+                        <input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="Email address"
+                               required="required">
+                        <label for="userEmail">Email address</label>
+                    </div>
+                </div>
+
+                <input type="submit" class="btn btn-primary btn-block" value="Register" id="searchPw" />
             </form>
             <div class="text-center">
-                <a class="d-block small mt-3" href="join.do">Register an Account</a>
-                <a class="d-block small" href="searchPw.do">Forgot Password?</a>
+                <a class="d-block small mt-3" href="login.do">Login Page</a>
             </div>
         </div>
     </div>

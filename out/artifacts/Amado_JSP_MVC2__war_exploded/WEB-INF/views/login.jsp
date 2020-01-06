@@ -21,6 +21,15 @@
 </head>
 
 <body class="bg-dark">
+
+<c:if test="${ searchPwResult == 1}">
+    <script>
+        alert("비밀번호는 ${dto.userPassword} 입니다.");
+    </script>
+</c:if>
+
+
+
 <c:if test="${sessionID != null }">
     <script>
         alert("이미 로그인 중입니다.");
@@ -57,7 +66,7 @@
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="join.do">Register an Account</a>
-                <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+                <a class="d-block small" href="searchPw.do">Forgot Password?</a>
             </div>
         </div>
     </div>

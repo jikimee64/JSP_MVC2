@@ -16,7 +16,6 @@ import java.util.regex.Pattern;
 
 public class modifyController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setCharacterEncoding("UTF-8");
         String userID = request.getParameter("userID");
         String userPassword = request.getParameter("userPassword");
         String userName = request.getParameter("userName");
@@ -68,7 +67,6 @@ public class modifyController extends HttpServlet {
     }
 
     private void getSession(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession();
         String userID = (String)session.getAttribute("sessionID");
         UserDAO userDAO = UserDAO.getInstance();

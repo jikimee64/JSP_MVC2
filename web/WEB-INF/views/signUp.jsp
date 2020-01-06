@@ -5,7 +5,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -85,7 +84,7 @@
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="login.do">Login Page</a>
-                <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+                <a class="d-block small" href="searchPw.do">Forgot Password?</a>
             </div>
         </div>
     </div>

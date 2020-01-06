@@ -60,6 +60,25 @@
         <url-pattern>/modify.do</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>searchPw</servlet-name>
+        <servlet-class>com.controller.SearchPwController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>searchPw</servlet-name>
+        <url-pattern>/searchPw.do</url-pattern>
+    </servlet-mapping>
+
+<!--Filter-->
+    <filter>
+        <filter-name>tempFilter</filter-name>
+        <filter-class>com.filter.TempFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>tempFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 
 
 
