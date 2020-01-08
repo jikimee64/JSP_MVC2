@@ -7,23 +7,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="075fa6f3-011a-425d-bd94-ef4123aee5e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/controller/SearchPwController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/filter/TempFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/searchPw.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/board/dao/BbsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/board/dto/BbsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/controller/bbs/listController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/controller/bbs/writeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/write.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/SearchPwController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/homeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/joinController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/loginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/logoutController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/modifyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/filter/TempFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/filter/TempFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/modify.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/signUp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/homeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/joinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/joinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/modifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/modifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/SearchPwController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/homeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/joinController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/loginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/logoutController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/modifyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/filter/TempFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/filter/TempFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/query.sql" beforeDir="false" afterPath="$PROJECT_DIR$/query.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/SearchPwController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/searchPwController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/homeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/joinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/joinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/logoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/logoutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/modifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/modifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/filter/TempFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/filter/TempFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/modify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/signUp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +53,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -66,14 +84,14 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.member.dao" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF\static" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF\views" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.member.dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -293,7 +311,11 @@
       <updated>1578042464248</updated>
       <workItem from="1578042468792" duration="18611000" />
       <workItem from="1578111302843" duration="12241000" />
-      <workItem from="1578272200586" duration="9696000" />
+      <workItem from="1578272200586" duration="10294000" />
+      <workItem from="1578356428697" duration="6152000" />
+      <workItem from="1578390601806" duration="7306000" />
+      <workItem from="1578443713132" duration="7752000" />
+      <workItem from="1578460901508" duration="6475000" />
     </task>
     <servers />
   </component>

@@ -7,12 +7,12 @@ public class TempFilter implements Filter {
 
     @Override
     public void init(FilterConfig arg0) throws ServletException{
-        System.out.println(" --filter init() --");
+//        System.out.println(" --filter init() --");
     }
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        System.out.println(" -- filter doFilter() --");
+//        System.out.println(" -- filter doFilter() --");
 
         //request filter
         request.setCharacterEncoding("UTF-8");
