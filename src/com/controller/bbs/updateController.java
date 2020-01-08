@@ -9,35 +9,33 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-public class writeController extends HttpServlet {
+public class updateController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession();
-        String sessionID = (String) session.getAttribute("sessionID");
-        if(sessionID == null){
-            sessionID = "비회원";
-        }
 
+        String bbsID = request.getParameter("bbsID");
         String bbsTitle = request.getParameter("bbsTitle");
         String bbsContent = request.getParameter("bbsContent");
-        String bbsDate = request.getParameter("bbsDate");
 
         BbsDAO bbsDAO = BbsDAO.getInstance();
         BbsDTO bbsDTO = new BbsDTO();
-        bbsDTO.setBbsID(bbsDAO.nextval() + 1);
+        bbsDTO.setBbsID(Integer.parseInt(bbsID));
         bbsDTO.setBbsTitle(bbsTitle);
         bbsDTO.setBbsContent(bbsContent);
-        bbsDTO.setBbsDate(bbsDate);
-        bbsDTO.setUserID(sessionID);
 
-        int wResult = bbsDAO.write(bbsDTO);
+        bbsDAO.update(bbsDTO);
         response.sendRedirect("list.do");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/board/write.jsp");
+        String bbsID = request.getParameter("bbsID");
+        BbsDAO bbsDAO = BbsDAO.getInstance();
+        BbsDTO bbsDTO = new BbsDTO();
+        bbsDTO = bbsDAO.selectbyID(bbsID);
+
+        request.setAttribute("update", bbsDTO);
+        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/board/update.jsp");
         rd.forward(request, response);
     }
 }

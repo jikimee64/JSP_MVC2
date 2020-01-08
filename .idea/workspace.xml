@@ -7,41 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="075fa6f3-011a-425d-bd94-ef4123aee5e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/board/dao/BbsDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/board/dto/BbsDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/controller/bbs/listController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/controller/bbs/writeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/write.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/controller/bbs/deleteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/controller/bbs/updateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/controller/bbs/viewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/SearchPwController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/homeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/joinController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/loginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/logoutController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/modifyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/filter/TempFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/filter/TempFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/signUp.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/board/dao/BbsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/board/dao/BbsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/write.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/SearchPwController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/homeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/joinController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/loginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/logoutController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/modifyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/filter/TempFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/filter/TempFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query.sql" beforeDir="false" afterPath="$PROJECT_DIR$/query.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/SearchPwController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/searchPwController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/homeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/homeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/joinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/joinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/logoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/logoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/modifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/modifyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/filter/TempFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/filter/TempFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/board/dao/BbsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/board/dao/BbsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/board/dao/BbsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/board/dao/BbsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/bbs/writeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/bbs/writeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/write.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,14 +68,14 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.member.dao" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF\static" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF\views" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.member.dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -315,7 +299,8 @@
       <workItem from="1578356428697" duration="6152000" />
       <workItem from="1578390601806" duration="7306000" />
       <workItem from="1578443713132" duration="7752000" />
-      <workItem from="1578460901508" duration="6475000" />
+      <workItem from="1578460901508" duration="13335000" />
+      <workItem from="1578480460209" duration="5348000" />
     </task>
     <servers />
   </component>

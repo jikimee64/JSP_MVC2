@@ -1,4 +1,3 @@
-<%@ page import="java.sql.Timestamp" %>
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@page import="com.board.dao.BbsDAO" %>
 <%@ page import="com.board.dto.BbsDTO" %>
@@ -15,6 +14,12 @@
     List<BbsDTO> list = bbsDao.selectList();
 %>
 
+<c:if test="${sessionID == null }">
+    <script>
+        alert("로그인을 해주세요.");
+        location.href = "main.do";
+    </script>
+</c:if>
 
 <div id="content-wrapper">
     <div class="container-fluid">
@@ -50,13 +55,13 @@
                         <%
                             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd, hh:mm:ss");
                             int count = 0;
-                            for(BbsDTO b : list){
+                            for (BbsDTO b : list) {
                         %>
                         <tr>
                             <td><%=b.getBbsID() %>
                             </td>
-                            <td><%=b.getBbsTitle() %>
-                            </td>
+                            <td><b><a href="view.do?bbsID=<%=b.getBbsID() %> "><%=b.getBbsTitle() %>
+                            </a></b></td>
                             <td><%=b.getUserID() %>
                             </td>
                             <td><%=b.getBbsDate() %>

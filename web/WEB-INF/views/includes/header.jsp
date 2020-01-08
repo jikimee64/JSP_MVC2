@@ -25,12 +25,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+    <style type="text/css">
+        .container {
+            margin: 20px 30px;
+        }
+
+        .board_title {
+            font-weight: 700;
+            font-size: 22px;
+            margin: 20px 0;
+        }
+
+        .board_info_box {
+            color: #6b6b6b;
+            margin: 10px;
+        }
+
+        .board_author {
+            font-size: 10px;
+            margin-right: 10px;
+        }
+
+        .board_date {
+            font-size: 10px;
+        }
+
+        .board_content {
+            color: #444343;
+            font-size: 16px;
+        }
+    </style>
+
 </head>
 <body id="page-top">
-<c:if test="${sessionID != null }">
-    ${sessionID } 로그인 중
-</c:if>
-
 
 <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
@@ -115,14 +142,14 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                 <h6 class="dropdown-header">Screens:</h6>
-                <a class="dropdown-item" href="login.do">Login</a>
-                <a class="dropdown-item" href="join.do">Register</a>
-                <a class="dropdown-item" href="modify.do">Modify</a>
-                <a class="dropdown-item" href="searchPw.do">Forgot Password</a>
-                <div class="dropdown-divider"></div>
-                <h6 class="dropdown-header">Other Pages:</h6>
-                <a class="dropdown-item" href="404.html">404 Page</a>
-                <a class="dropdown-item" href="blank.html">Blank Page</a>
+                <c:if test="${sessionID == null }">
+                    <a class="dropdown-item" href="login.do">Login</a>
+                    <a class="dropdown-item" href="join.do">Register</a>
+                    <a class="dropdown-item" href="searchPw.do">Forgot Password</a>
+                </c:if>
+                <c:if test="${sessionID != null }">
+                    <a class="dropdown-item" href="modify.do">Modify</a>
+                </c:if>
             </div>
         </li>
         <li class="nav-item">

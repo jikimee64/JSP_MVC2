@@ -1,20 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8" %>
 
 </div>
 <!-- /.container-fluid -->
 
-        <!-- Sticky Footer -->
-        <footer class="sticky-footer">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright © Your Website 2019</span>
-                </div>
-            </div>
-        </footer>
-
+<!-- Sticky Footer -->
+<footer class="sticky-footer">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+            <span>Copyright © Your Website 2019</span>
+        </div>
     </div>
-    <!-- /.content-wrapper -->
+</footer>
+
+</div>
+<!-- /.content-wrapper -->
 </div>
 <!-- /#wrapper -->
 
@@ -37,7 +37,9 @@
             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="logout.do">Logout</a>
+                <c:if test="${sessionID != null }">
+                    <a class="btn btn-primary" href="logout.do">Logout</a>
+                </c:if>
             </div>
         </div>
     </div>

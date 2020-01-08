@@ -87,9 +87,32 @@
         <url-pattern>/list.do</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>view</servlet-name>
+        <servlet-class>com.controller.bbs.viewController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>view</servlet-name>
+        <url-pattern>/view.do</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <servlet-class>com.controller.bbs.deleteController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/delete.do</url-pattern>
+    </servlet-mapping>
 
-
+    <servlet>
+        <servlet-name>update</servlet-name>
+        <servlet-class>com.controller.bbs.updateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>update</servlet-name>
+        <url-pattern>/update.do</url-pattern>
+    </servlet-mapping>
 
     <!--Filter-->
     <filter>
@@ -100,8 +123,6 @@
         <filter-name>tempFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-
-
 
 
     <servlet>
