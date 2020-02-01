@@ -29,15 +29,18 @@ public class joinController extends HttpServlet {
         Matcher matcher2 = emailPattern.matcher(userEmail);
         if (!matcher1.matches()) {
             request.setAttribute("pwRole", 0);
+            request.getSession().setAttribute("messageType", "오류 메시지");
+            request.getSession().setAttribute("messageContent", "8~20자 영문+숫자+특수문자를 사용하세요.");
             RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/signUp.jsp");
             rd.forward(request, response);
         }
         if (!matcher2.matches()) {
             request.setAttribute("emailRole", 0);
+            request.getSession().setAttribute("messageType", "오류 메시지");
+            request.getSession().setAttribute("messageContent", "잘못된 이메일 형식입니다.");
             RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/signUp.jsp");
             rd.forward(request, response);
         } else {
-
             UserDAO userDAO = UserDAO.getInstance();
             UserDTO userDTO = new UserDTO();
             userDTO.setUserID(userID);
@@ -50,10 +53,14 @@ public class joinController extends HttpServlet {
                 request.setAttribute("joinResult", joinResult);
                 HttpSession session = request.getSession();
                 session.setAttribute("sessionID", userID);
+                request.getSession().setAttribute("messageType", "성공 메시지");
+                request.getSession().setAttribute("messageContent", "회원가입에 성공했습니다.");
                 RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
                 rd.forward(request, response);
             } else {
                 request.setAttribute("joinResult", 0);
+                request.getSession().setAttribute("messageType", "오류 메시지");
+                request.getSession().setAttribute("messageContent", "아이디가 중복됩니다.");
                 RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/signUp.jsp");
                 rd.forward(request, response);
             }

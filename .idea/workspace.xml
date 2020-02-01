@@ -7,25 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="075fa6f3-011a-425d-bd94-ef4123aee5e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/controller/bbs/deleteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/controller/bbs/updateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/controller/bbs/viewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/update.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/controller/member/joinCheckController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/META-INF/context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amado_JSP(MVC2).iml" beforeDir="false" afterPath="$PROJECT_DIR$/Amado_JSP(MVC2).iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/board/dao/BbsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/board/dao/BbsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/write.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/board/dto/BbsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/board/dto/BbsDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/member/joinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/member/joinController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/member/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/member/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/util/DatabaseUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/signUp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/board/dao/BbsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/board/dao/BbsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/board/dto/BbsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/board/dto/BbsDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/member/joinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/member/joinController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/member/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/member/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/util/DatabaseUtil.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/board/dao/BbsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/board/dao/BbsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/bbs/writeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/bbs/writeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/write.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/board/dto/BbsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/board/dto/BbsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/member/joinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/joinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/member/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/member/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/util/DatabaseUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/signUp.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,11 +64,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringMavenProject_Java" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Nadongbin_youtube/Ajax 고급 회원제 채팅 사이트" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16699219" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="project.structure.side.proportion" value="0.31238273" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -73,8 +76,8 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web" />
-      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF\static" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF\views" />
+      <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF\static" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF" />
     </key>
   </component>
@@ -301,6 +304,17 @@
       <workItem from="1578443713132" duration="7752000" />
       <workItem from="1578460901508" duration="13335000" />
       <workItem from="1578480460209" duration="5348000" />
+      <workItem from="1578531753921" duration="1197000" />
+      <workItem from="1578550065458" duration="163000" />
+      <workItem from="1578550417090" duration="52000" />
+      <workItem from="1578550539812" duration="817000" />
+      <workItem from="1578551532459" duration="1312000" />
+      <workItem from="1578961521687" duration="2380000" />
+      <workItem from="1579057189826" duration="615000" />
+      <workItem from="1579851046571" duration="803000" />
+      <workItem from="1579938705246" duration="7715000" />
+      <workItem from="1580559930857" duration="2167000" />
+      <workItem from="1580574556404" duration="5135000" />
     </task>
     <servers />
   </component>

@@ -10,37 +10,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>SB Admin - Register</title>
-
     <!-- Custom fonts for this template-->
     <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
     <!-- Custom styles for this template-->
     <link href="static/css/sb-admin.css" rel="stylesheet">
+    <script type="text/javascript">
+        function registerCheckFunction() {
+            var userID = $('#userID').val();
+            $.ajax({
+                type: 'POST',
+                url: './joinCheck',
+                data: {userID: userID},
+                success: function (result) {
+                    if (result == 1) {
+                        $('#checkMessage').html('사용할 수 있는 아이디입니다.');
+                    } else {
+                        $('#checkMessage').html('사용할 수 없는 아이디입니다.');
+                    }
+                    $('#checkModal').modal("show");
+                }
+            })
+        }
+    </script>
 
 </head>
 
 <body class="bg-dark">
 
+<!-- Bootstrap core JavaScript-->
+<script src="static/vendor/jquery/jquery.min.js"></script>
+<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
 <c:if test="${ joinResult == 0}">
     <script>
-        alert("아이디가 중복됩니다.");
+        $('#messageModal').modal("show");
     </script>
 </c:if>
 
 <c:if test="${ pwRole == 0}">
     <script>
-        alert("8~20자 영문+숫자+특수문자를 사용하세요.");
+        $('#messageModal').modal("show");
     </script>
 </c:if>
 
 <c:if test="${ emailRole == 0}">
     <script>
-        alert("잘못된 이메일 형식입니다.");
+        $('#messageModal').modal("show");
     </script>
 </c:if>
-
 
 <div class="container">
     <div class="card card-register mx-auto mt-5">
@@ -54,11 +76,14 @@
                                required="required" autofocus="autofocus">
                         <label for="userID">ID</label>
                     </div>
+                    <button class="btn btn-info btn-block" onclick="registerCheckFunction();" type="button">아이디 중복체크
+                    </button>
                 </div>
 
                 <div class="form-group">
                     <div class="form-label-group">
-                        <input type="password" name="userPassword" id="userPassword" class="form-control" placeholder="Password"
+                        <input type="password" name="userPassword" id="userPassword" class="form-control"
+                               placeholder="Password"
                                required="required">
                         <label for="userPassword">Password</label>
                     </div>
@@ -74,13 +99,14 @@
 
                 <div class="form-group">
                     <div class="form-label-group">
-                        <input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="Email address"
+                        <input type="email" name="userEmail" id="userEmail" class="form-control"
+                               placeholder="Email address"
                                required="required">
                         <label for="userEmail">Email address</label>
                     </div>
                 </div>
 
-                <input type="submit" class="btn btn-primary btn-block" value="Register" id="signUp" />
+                <input type="submit" class="btn btn-primary btn-block" value="Register" id="signUp"/>
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="login.do">Login Page</a>
@@ -90,13 +116,67 @@
     </div>
 </div>
 
-<!-- Bootstrap core JavaScript-->
-<script src="static/vendor/jquery/jquery.min.js"></script>
-<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<%
+    String messageContent = null;
+    if (session.getAttribute("messageContent") != null) {
+        messageContent = (String) session.getAttribute("messageContent");
+    }
+    String messageType = null;
+    if (session.getAttribute("messageType") != null) {
+        messageType = (String) session.getAttribute("messageType");
+    }
+    if (messageContent != null) {
+%>
 
-<!-- Core plugin JavaScript-->
-<script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <%= messageType%>
+                </h4>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <%= messageContent%>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#messageModal').modal("show");
+</script>
 
+<%
+        session.removeAttribute("messageContent");
+        session.removeAttribute("messageType");
+    }
+%>
+<!-- ID Check Modal-->
+<div class="modal fade" id="checkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    확인 메시지
+                </h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body" id="checkMessage">
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>

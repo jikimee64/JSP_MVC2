@@ -32,6 +32,16 @@
         <url-pattern>/join.do</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>joinCheck</servlet-name>
+        <servlet-class>com.controller.member.joinCheckController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>joinCheck</servlet-name>
+        <url-pattern>/joinCheck</url-pattern>
+    </servlet-mapping>
+
+
 
     <servlet>
         <servlet-name>login</servlet-name>
@@ -123,6 +133,16 @@
         <filter-name>tempFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+
+
+
+
+
+
+
+
+
 
 
     <servlet>

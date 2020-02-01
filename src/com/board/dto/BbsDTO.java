@@ -1,7 +1,5 @@
 package com.board.dto;
 
-import java.sql.Timestamp;
-
 public class BbsDTO {
     private int bbsID = 1, bbsHit = 0;
     private String bbsTitle, bbsContent, userID, bbsDate;

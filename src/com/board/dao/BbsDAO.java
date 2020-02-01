@@ -1,9 +1,9 @@
 package com.board.dao;
 
 import com.board.dto.BbsDTO;
-import com.util.DatabaseUtil;
-
-import javax.xml.crypto.Data;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -16,10 +16,17 @@ public class BbsDAO {
     private Connection con;
     private PreparedStatement pstmt;
     private ResultSet rs;
+    DataSource dataSource;
     private int result = 0;
 
     private BbsDAO() {
-        super();
+        try {
+            InitialContext initContext = new InitialContext();
+            Context envContext = (Context) initContext.lookup("java:/comp/env");
+            dataSource = (DataSource) envContext.lookup("jdbc/amado");
+        } catch (Exception e) {
+            System.err.println("Connection Pool Error");
+        }
     }
 
     public static BbsDAO getInstance() {
@@ -51,11 +58,11 @@ public class BbsDAO {
     }
 
     public int nextval() {
-        con = DatabaseUtil.getConnection();
         StringBuffer query = new StringBuffer();
         query.append("SELECT MAX(bbsID) ").append("FROM bbs");
 
         try {
+            con = dataSource.getConnection();
             pstmt = con.prepareStatement(query.toString());
             rs = pstmt.executeQuery();
             while (rs.next()) {
@@ -71,12 +78,12 @@ public class BbsDAO {
 
 
     public int write(BbsDTO bbsDTO) {
-        con = DatabaseUtil.getConnection();
         StringBuffer query = new StringBuffer();
         query.append("INSERT INTO bbs ");
         query.append("(bbsID, bbsTitle, bbsContent, bbsDate, bbsHit, userID) ");
         query.append("VALUES (?, ?, ?, NOW(), 0, ?)");
         try {
+            con = dataSource.getConnection();
             pstmt = con.prepareStatement(query.toString());
             pstmt.setInt(1, bbsDTO.getBbsID());
             pstmt.setString(2, bbsDTO.getBbsTitle());
@@ -95,7 +102,7 @@ public class BbsDAO {
         List<BbsDTO> list = new ArrayList<>();
 
         try {
-            con = DatabaseUtil.getConnection();
+            con = dataSource.getConnection();
             String sql = "SELECT * FROM bbs order by bbsID desc";
             pstmt = con.prepareStatement(sql);
             rs = pstmt.executeQuery();
@@ -119,10 +126,10 @@ public class BbsDAO {
     }
 
     public int hitUpdate(String bbsID) {
-        con = DatabaseUtil.getConnection();
         String sql = "UPDATE bbs SET bbsHit = bbsHit + 1 WHERE bbsID = ?";
 
         try {
+            con = dataSource.getConnection();
             pstmt = con.prepareStatement(sql);
             pstmt.setString(1, bbsID);
             result = pstmt.executeUpdate();
@@ -136,10 +143,10 @@ public class BbsDAO {
 
     public BbsDTO selectbyID(String bbsID) {
         BbsDTO bbsDTO = new BbsDTO();
-        con = DatabaseUtil.getConnection();
         String sql = "SELECT * FROM bbs WHERE bbsID = ?";
 
         try {
+            con = dataSource.getConnection();
             pstmt = con.prepareStatement(sql);
             pstmt.setString(1, bbsID);
             rs = pstmt.executeQuery();
@@ -161,10 +168,10 @@ public class BbsDAO {
     }
 
     public int del(int bbsID) {
-        con = DatabaseUtil.getConnection();
         String sql = "DELETE FROM bbs where bbsID = ?";
 
         try {
+            con = dataSource.getConnection();
             pstmt = con.prepareStatement(sql);
             pstmt.setInt(1, bbsID);
             result = pstmt.executeUpdate();
@@ -177,13 +184,13 @@ public class BbsDAO {
     }
 
     public int update(BbsDTO bbsDTO) {
-        con = DatabaseUtil.getConnection();
         StringBuffer query = new StringBuffer();
         query.append("UPDATE bbs SET bbsTitle = ?, ");
         query.append("bbsContent = ? ");
         query.append("WHERE bbsID = ?");
 
         try {
+            con = dataSource.getConnection();
             pstmt = con.prepareStatement(query.toString());
             pstmt.setString(1, bbsDTO.getBbsTitle());
             pstmt.setString(2, bbsDTO.getBbsContent());

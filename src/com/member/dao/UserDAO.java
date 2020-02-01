@@ -1,11 +1,10 @@
 package com.member.dao;
 
 import com.member.dto.UserDTO;
-import com.util.DatabaseUtil;
-
-import javax.xml.crypto.Data;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
 import java.sql.*;
-import java.util.ArrayList;
 
 public class UserDAO {
     // +-------------싱글톤 패턴 적용-------------+
@@ -13,10 +12,17 @@ public class UserDAO {
     private Connection con;
     private PreparedStatement pstmt;
     private ResultSet rs;
+    DataSource dataSource;
     private int result;
 
-    private UserDAO(){
-
+    public UserDAO(){
+        try{
+            InitialContext initContext = new InitialContext();
+            Context envContext = (Context) initContext.lookup("java:/comp/env");
+            dataSource = (DataSource) envContext.lookup("jdbc/amado");
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
     public static synchronized UserDAO getInstance() {
@@ -53,10 +59,10 @@ public class UserDAO {
     }
 
     public int join(UserDTO userDTO){
-        con = DatabaseUtil.getConnection();
         StringBuffer query = new StringBuffer();
         query.append("INSERT INTO user").append(" VALUES (?, ?, ?, ?)");
         try{
+            con = dataSource.getConnection();
             pstmt = con.prepareStatement(query.toString());
             pstmt.setString(1, userDTO.getUserID());
             pstmt.setString(2, userDTO.getUserPassword());
@@ -71,11 +77,32 @@ public class UserDAO {
         return result;
     }
 
+    public int registerCheck(String userID) {
+        StringBuffer query = new StringBuffer();
+        query.append("SELECT *").append(" FROM user").append(" WHERE userID = ?");
+        try {
+            con = dataSource.getConnection();
+            pstmt = con.prepareStatement(query.toString());
+            pstmt.setString(1, userID);
+            rs = pstmt.executeQuery();
+            if (rs.next() || userID == null || userID.equals("")) {
+                return 0; //이미 존재하는 회원
+            } else {
+                return 1; //가입 가능한 회원 아이디
+            }
+        } catch(SQLException e){
+            System.err.println("registerCheck error");
+        } finally {
+            this.close(con, pstmt, null);
+        }
+        return -1;
+    }
+
     public int login(String userID, String userPassword){
-        con = DatabaseUtil.getConnection();
         StringBuffer query = new StringBuffer();
         query.append("SELECT userPassword").append(" FROM user").append(" WHERE userID = ?");
         try{
+            con = dataSource.getConnection();
             pstmt = con.prepareStatement(query.toString());
             pstmt.setString(1, userID);
             rs = pstmt.executeQuery();
@@ -96,10 +123,10 @@ public class UserDAO {
     }
 
     public int modify(UserDTO userDTO){
-        con = DatabaseUtil.getConnection();
         StringBuffer query = new StringBuffer();
         query.append("UPDATE user").append(" SET userPassword = ?, userName = ?, userEmail = ? ").append(" WHERE userID = ?");
         try{
+            con = dataSource.getConnection();
             pstmt = con.prepareStatement(query.toString());
             pstmt.setString(1, userDTO.getUserPassword());
             pstmt.setString(2, userDTO.getUserName());
@@ -116,10 +143,10 @@ public class UserDAO {
 
     public UserDTO getMember(String userID){
         UserDTO userDTO = null;
-        con = DatabaseUtil.getConnection();
         StringBuffer query = new StringBuffer();
         query.append("SELECT *").append(" FROM user").append(" WHERE userID = ?");
         try{
+            con = dataSource.getConnection();
             pstmt = con.prepareStatement(query.toString());
             pstmt.setString(1, userID);
             rs = pstmt.executeQuery();
