@@ -188,7 +188,8 @@ public class BbsDAO {
     public int update(BbsDTO bbsDTO) {
         StringBuffer query = new StringBuffer();
         query.append("UPDATE bbs SET bbsTitle = ?, ");
-        query.append("bbsContent = ? ");
+        query.append("bbsContent = ?, ");
+        query.append("bbsFile = ? ");
         query.append("WHERE bbsID = ?");
 
         try {
@@ -196,7 +197,8 @@ public class BbsDAO {
             pstmt = con.prepareStatement(query.toString());
             pstmt.setString(1, bbsDTO.getBbsTitle());
             pstmt.setString(2, bbsDTO.getBbsContent());
-            pstmt.setInt(3, bbsDTO.getBbsID());
+            pstmt.setString(3, bbsDTO.getBbsFile());
+            pstmt.setInt(4, bbsDTO.getBbsID());
             result = pstmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -208,24 +210,26 @@ public class BbsDAO {
 
     public String getFile(String bbsID) {
         BbsDTO bbsDTO = new BbsDTO();
-        String bbsFile = "";
         String sql = "SELECT bbsFile FROM bbs WHERE bbsID = ?";
         try {
             con = dataSource.getConnection();
             pstmt = con.prepareStatement(sql);
             pstmt.setString(1, bbsID);
             rs = pstmt.executeQuery();
-            while (rs.next()) {
-                bbsDTO.setBbsFile(rs.getString("bbsFile"));
+            if (rs.next()) {
+                return rs.getString("bbsFile");
             }
-            bbsFile = bbsDTO.getBbsFile();
+            return "";
         } catch (SQLException e) {
             System.err.println("getFile SQLException error");
         } finally {
             close(con, pstmt, rs);
         }
-        return bbsFile;
+        return "";
     }
+
+
+
 
 
 }

@@ -65,5 +65,3 @@
     </div>
 </div>
 
-</body>
-</html>

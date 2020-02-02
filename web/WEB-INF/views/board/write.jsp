@@ -36,7 +36,16 @@
                         </div>
                         <div class="mb-3">
                             <label for="bbsFile">파일 업로드</label>
-                            <input type="file" name="bbsFile"><br/>
+                            <input type="file" class="file" id="bbsFile" name="bbsFile"><br/>
+                            <div class="input-group col-xs-12">
+                                <span class="input-group-addon"></span>
+                                <input type="text" class="form-control input-lg" disabled placeholder="파일을 업로드하세요.">
+                                <span class="input-group-btn">
+                            <button class="browse btn btn-primary input-lg" type="button">
+                               파일찾기
+                            </button>
+                        </span>
+                            </div>
                         </div>
                         <div>
                             <button type="submit" class="btn btn-sm btn-primary" id="btnSave">저장</button>

@@ -7,48 +7,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="075fa6f3-011a-425d-bd94-ef4123aee5e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/controller/bbs/downloadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/model.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/static/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/board/dao/BbsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/board/dao/BbsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/board/dto/BbsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/board/dto/BbsDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/bbs/writeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/bbs/writeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/member/joinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/member/joinController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/member/loginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/member/loginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/member/logoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/member/logoutController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/member/modifyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/member/modifyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/bbs/downloadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/bbs/downloadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/bbs/updateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/classes/com/controller/bbs/updateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/update.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/board/write.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/model.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/includes/model.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/modify.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/views/signUp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/js/sb-admin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/js/sb-admin.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/bootstrap/scss/mixins/_gradients.scss" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/bootstrap/scss/mixins/_gradients.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/bootstrap/scss/mixins/_text-emphasis.scss" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/bootstrap/scss/mixins/_text-emphasis.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/bootstrap/scss/utilities/_screenreaders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/bootstrap/scss/utilities/_screenreaders.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/css/regular.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/css/regular.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/js/solid.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/js/solid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/brands/google-wallet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/brands/google-wallet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/brands/keycdn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/brands/keycdn.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/brands/quora.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/brands/quora.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/brands/staylinked.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/brands/staylinked.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/regular/caret-square-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/regular/caret-square-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/regular/comment-alt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/regular/comment-alt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/regular/stop-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/regular/stop-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/angle-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/angle-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/arrows-alt-v.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/arrows-alt-v.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/bars.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/bars.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/calendar-day.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/calendar-day.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/file-download.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/file-download.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/laptop-medical.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/laptop-medical.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/om.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/om.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/prescription-bottle-alt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/prescription-bottle-alt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/snowplow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/static/vendor/fontawesome-free/svgs/solid/snowplow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/upload/자바기술면접.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/upload/주민등록초본(부-1).jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/upload/체육인_리드미참고자료.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/upload/크기수정_취업사진.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Amado_JSP_MVC2__war_exploded/upload/통장 사본.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/board/dao/BbsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/board/dao/BbsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/board/dto/BbsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/board/dto/BbsDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/bbs/writeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/bbs/writeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/member/joinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/member/joinController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/member/loginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/member/loginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/member/logoutController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/member/logoutController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/member/modifyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/member/modifyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/bbs/downloadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/bbs/downloadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/bbs/updateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Amado_JSP(MVC2)/com/controller/bbs/updateController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/board/dao/BbsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/board/dao/BbsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/board/dto/BbsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/board/dto/BbsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/bbs/writeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/bbs/writeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/member/joinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/joinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/member/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/member/logoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/logoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/member/modifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/member/modifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/bbs/downloadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/bbs/downloadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/bbs/updateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/bbs/updateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/board/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/update.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/board/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/board/write.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/includes/model.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/includes/model.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/modify.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/signUp.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,8 +78,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -84,20 +104,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../dontcallme_JSP(MVC1)" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.16699219" />
     <property name="project.structure.side.proportion" value="0.31238273" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.member.dao" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF\views" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF\static" />
       <recent name="D:\kimwoocheol\PersonelStudy\IntelliJ\Amado_JSP(MVC2)\web\WEB-INF" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.member.dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -334,7 +355,7 @@
       <workItem from="1579938705246" duration="7715000" />
       <workItem from="1580559930857" duration="2167000" />
       <workItem from="1580574556404" duration="8810000" />
-      <workItem from="1580616272313" duration="7842000" />
+      <workItem from="1580616272313" duration="22298000" />
     </task>
     <servers />
   </component>

@@ -117,3 +117,5 @@
 </div>
 
 <%@include file="includes/model.jsp" %>
+</body>
+</html>

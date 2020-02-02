@@ -25,9 +25,22 @@
             <article>
                 <div class="container" role="main">
                     <div class="bg-white rounded shadow-sm">
-                        <div class="board_title"><c:out value="${view.bbsTitle}"/></div>
-                        <div class="board_content">${view.bbsContent}</div>
-                        <div class="board_info_box">${view.bbsFile}</div>
+                        <div class="mb-3">
+                            <label for="bbsTitle">제목</label>
+                            <input type="text" class="form-control" name="bbsTitle" readonly id="bbsTitle"
+                                   value="<c:out value="${view.bbsTitle}"/>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="bbsContent">내용</label>
+                            <textarea class="form-control" rows="5" name="bbsContent" readonly id="bbsContent">${view.bbsContent}</textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bbsFile">파일 업로드</label>
+                            <input type="text" id="bbsFile" class="form-control" readonly name="bbsFile" value="<c:out value="${view.bbsFile}"/>"><br/>
+                        </div>
+<%--                        <div class="board_title"><c:out value="${view.bbsTitle}"/></div>--%>
+<%--                        <div class="board_content">${view.bbsContent}</div>--%>
+<%--                        <div class="board_info_box">${view.bbsFile}</div>--%>
                     </div>
 
                     <div style="margin-top : 30px">

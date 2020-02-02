@@ -5,6 +5,5 @@
 
 <%@include file="includes/header.jsp"%>
 <%@include file="includes/footer.jsp"%>
-<%@include file="includes/model.jsp"%>
-
+<%--<%@include file="includes/model.jsp"%>--%>
 

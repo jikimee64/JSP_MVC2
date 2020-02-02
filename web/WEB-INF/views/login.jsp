@@ -79,3 +79,5 @@
 <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <%@include file="includes/model.jsp" %>
+</body>
+</html>

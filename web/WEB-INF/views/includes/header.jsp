@@ -15,39 +15,11 @@
     <link href="static/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="static/css/sb-admin.css" rel="stylesheet">
+    <!-- Custom styles 우철-->
+    <link href="static/css/custom.css" rel="stylesheet">
     <!-- boardWrite BootStrap css-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <style type="text/css">
-        .container {
-            margin: 20px 30px;
-        }
-
-        .board_title {
-            font-weight: 700;
-            font-size: 22px;
-            margin: 20px 0;
-        }
-
-        .board_info_box {
-            color: #6b6b6b;
-            margin: 10px;
-        }
-
-        .board_author {
-            font-size: 10px;
-            margin-right: 10px;
-        }
-
-        .board_date {
-            font-size: 10px;
-        }
-
-        .board_content {
-            color: #444343;
-            font-size: 16px;
-        }
-    </style>
 </head>
 <body id="page-top">
 

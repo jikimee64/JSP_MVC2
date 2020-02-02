@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+    font-family: 'Nanum Gothic';
+}
+h5{
+    font-family: 'Noto Sans KR';
+    fot-size: 15px;
+}
+h4{
+    font-family: 'Noto Sans KR';
+}
+h3{
+    font-family: 'Hanna';
+}
+h2{
+    font-family: 'Hanna';
+}
+h1{
+    font-family: 'Hanna';
+}
+.container {
+    margin: 20px 30px;
+}
+
+.board_title {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.board_info_box {
+    color: #6b6b6b;
+    margin: 10px;
+}
+
+.board_author {
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.board_date {
+    font-size: 10px;
+}
+
+.board_content {
+    color: #444343;
+    font-size: 16px;
+}
+.file{
+    visibility: hidden;
+    position: absolute;
+}

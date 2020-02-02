@@ -23,7 +23,7 @@
             </div>
             <article>
                 <div class="container" role="main">
-                    <form action="update.do" method="post">
+                    <form action="update.do" method="post" enctype="multipart/form-data">
                         <div class="mb-3">
                             <label for="bbsTitle">제목</label>
                             <input type="text" class="form-control" name="bbsTitle" required="required" id="bbsTitle"
@@ -33,6 +33,19 @@
                             <label for="bbsContent">내용</label>
                             <textarea class="form-control" rows="5" name="bbsContent" id="bbsContent"
                                       placeholder="내용을 입력해 주세요">${update.bbsContent}</textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bbsFile">파일 업로드</label>
+                            <input type="file" class="file" name="bbsFile"><br/>
+                            <div class="input-group col-xs-12">
+                                <span class="input-group-addon"></span>
+                                <input type="text" class="form-control input-lg" disabled placeholder="${update.bbsFile}">
+                                <span class="input-group-btn">
+                            <button class="browse btn btn-primary input-lg" type="button">
+                               파일찾기
+                            </button>
+                        </span>
+                            </div>
                         </div>
                         <div>
                             <button type="submit" class="btn btn-sm btn-primary" id="btnSave">저장</button>

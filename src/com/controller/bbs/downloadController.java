@@ -54,6 +54,7 @@ public class downloadController extends HttpServlet {
                 skip = true;
             }
 
+            //어떤 브라우저로 접속했는지..
             client = request.getHeader("User-Agent");
 
             // 파일 다운로드 헤더 지정
