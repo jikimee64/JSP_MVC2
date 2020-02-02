@@ -33,13 +33,13 @@
 
 <c:if test="${ pwRole == 0}">
     <script>
-        alert("8~20자 영문+숫자+특수문자를 사용하세요.");
+        $('#messageModal').modal("show");
     </script>
 </c:if>
 
 <c:if test="${ emailRole == 0}">
     <script>
-        alert("잘못된 이메일 형식입니다.");
+        $('#messageModal').modal("show");
     </script>
 </c:if>
 
@@ -98,6 +98,5 @@
 <!-- Core plugin JavaScript-->
 <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</body>
+<%@include file="includes/model.jsp"%>
 
-</html>

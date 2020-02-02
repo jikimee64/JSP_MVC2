@@ -2,7 +2,11 @@ package com.board.dto;
 
 public class BbsDTO {
     private int bbsID = 1, bbsHit = 0;
-    private String bbsTitle, bbsContent, userID, bbsDate;
+    private String bbsTitle, bbsContent, userID, bbsDate, bbsFile;
+
+    public String getBbsFile() { return bbsFile; }
+
+    public void setBbsFile(String bbsFile) { this.bbsFile = bbsFile; }
 
     public String getBbsDate() {
         return bbsDate;

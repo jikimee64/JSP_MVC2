@@ -21,7 +21,6 @@ public class logoutController extends HttpServlet {
     private void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         session.invalidate();
-
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
         rd.forward(request, response);
     }

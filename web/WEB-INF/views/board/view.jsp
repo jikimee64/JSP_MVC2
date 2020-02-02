@@ -19,7 +19,7 @@
         <div class="card mb-3">
             <div class="card-header">
                 <i class="fas fa-table"></i>
-                <button type="button" class="btn btn-xs pull-right">View Board
+                <button type="button" onclick="location.href='list.do' " class="btn btn-xs pull-right">View Board
                 </button>
             </div>
             <article>
@@ -27,6 +27,7 @@
                     <div class="bg-white rounded shadow-sm">
                         <div class="board_title"><c:out value="${view.bbsTitle}"/></div>
                         <div class="board_content">${view.bbsContent}</div>
+                        <div class="board_info_box">${view.bbsFile}</div>
                     </div>
 
                     <div style="margin-top : 30px">
@@ -42,6 +43,14 @@
                                         <button type="button" class="btn btn-sm btn-primary" id="btnUpdate">수정</button>
                                     </a>
                                 </td>
+                                <c:if test="${ view.bbsFile != NULL}">
+                                    <td>
+                                        <a href="download.do?bbsID=${view.bbsID}">
+                                            <button type="button" class="btn btn-sm btn-primary" id="btnDownload">다운
+                                            </button>
+                                        </a>
+                                    </td>
+                                </c:if>
                             </c:when>
                         </c:choose>
                         <button type="button" onclick="location.href='list.do' " class="btn btn-sm btn-primary"

@@ -27,6 +27,8 @@ public class loginController extends HttpServlet {
             rd.forward(request, response);
         }else{
             request.setAttribute("loginResult", loginResult);
+            request.getSession().setAttribute("messageType", "오류 메시지");
+            request.getSession().setAttribute("messageContent", "아이디 혹은 비밀번호가 틀렸습니다.");
             RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/login.jsp");
             rd.forward(request, response);
         }

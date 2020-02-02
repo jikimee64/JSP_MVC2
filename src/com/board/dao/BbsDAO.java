@@ -19,7 +19,7 @@ public class BbsDAO {
     DataSource dataSource;
     private int result = 0;
 
-    private BbsDAO() {
+    public BbsDAO() {
         try {
             InitialContext initContext = new InitialContext();
             Context envContext = (Context) initContext.lookup("java:/comp/env");
@@ -80,8 +80,8 @@ public class BbsDAO {
     public int write(BbsDTO bbsDTO) {
         StringBuffer query = new StringBuffer();
         query.append("INSERT INTO bbs ");
-        query.append("(bbsID, bbsTitle, bbsContent, bbsDate, bbsHit, userID) ");
-        query.append("VALUES (?, ?, ?, NOW(), 0, ?)");
+        query.append("(bbsID, bbsTitle, bbsContent, bbsDate, bbsHit, userID, bbsFile) ");
+        query.append("VALUES (?, ?, ?, NOW(), 0, ?, ?)");
         try {
             con = dataSource.getConnection();
             pstmt = con.prepareStatement(query.toString());
@@ -89,6 +89,7 @@ public class BbsDAO {
             pstmt.setString(2, bbsDTO.getBbsTitle());
             pstmt.setString(3, bbsDTO.getBbsContent());
             pstmt.setString(4, bbsDTO.getUserID());
+            pstmt.setString(5, bbsDTO.getBbsFile());
             result = pstmt.executeUpdate();
         } catch (SQLException e) {
             System.err.println("write SQLException error");
@@ -158,6 +159,7 @@ public class BbsDAO {
                 bbsDTO.setBbsDate(rs.getString("bbsDate"));
                 bbsDTO.setBbsHit(rs.getInt("bbsHit"));
                 bbsDTO.setUserID(rs.getString("userID"));
+                bbsDTO.setBbsFile(rs.getString("bbsFile"));
             }
         } catch (SQLException e) {
             System.err.println("selectbyID SQLException error");
@@ -202,6 +204,27 @@ public class BbsDAO {
             close(con, pstmt, null);
         }
         return result;
+    }
+
+    public String getFile(String bbsID) {
+        BbsDTO bbsDTO = new BbsDTO();
+        String bbsFile = "";
+        String sql = "SELECT bbsFile FROM bbs WHERE bbsID = ?";
+        try {
+            con = dataSource.getConnection();
+            pstmt = con.prepareStatement(sql);
+            pstmt.setString(1, bbsID);
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                bbsDTO.setBbsFile(rs.getString("bbsFile"));
+            }
+            bbsFile = bbsDTO.getBbsFile();
+        } catch (SQLException e) {
+            System.err.println("getFile SQLException error");
+        } finally {
+            close(con, pstmt, rs);
+        }
+        return bbsFile;
     }
 
 

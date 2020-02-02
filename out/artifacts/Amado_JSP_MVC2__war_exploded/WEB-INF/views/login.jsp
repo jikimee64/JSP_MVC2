@@ -28,8 +28,6 @@
     </script>
 </c:if>
 
-
-
 <c:if test="${sessionID != null }">
     <script>
         alert("이미 로그인 중입니다.");
@@ -39,7 +37,7 @@
 
 <c:if test="${ loginResult == -1 || loginResult == 0}">
     <script>
-        alert("아이디 혹은 비밀번호가 틀렸습니다.");
+        $('#messageModal').modal("show");
     </script>
 </c:if>
 
@@ -58,11 +56,12 @@
                 </div>
                 <div class="form-group">
                     <div class="form-label-group">
-                        <input type="password" name="userPassword" id="userPassword" class="form-control" placeholder="Password" required="required">
+                        <input type="password" name="userPassword" id="userPassword" class="form-control"
+                               placeholder="Password" required="required">
                         <label for="userPassword">Password</label>
                     </div>
                 </div>
-                <input type="submit" class="btn btn-primary btn-block" value="Register" id="login" />
+                <input type="submit" class="btn btn-primary btn-block" value="Register" id="login"/>
             </form>
             <div class="text-center">
                 <a class="d-block small mt-3" href="join.do">Register an Account</a>
@@ -79,6 +78,4 @@
 <!-- Core plugin JavaScript-->
 <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</body>
-
-</html>
+<%@include file="includes/model.jsp" %>

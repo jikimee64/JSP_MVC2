@@ -44,30 +44,3 @@
         </div>
     </div>
 </div>
-
-<!-- Bootstrap core JavaScript-->
-<script src="static/vendor/jquery/jquery.min.js"></script>
-<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Core plugin JavaScript-->
-<script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Page level plugin JavaScript-->
-<script src="static/vendor/chart.js/Chart.min.js"></script>
-<script src="static/vendor/datatables/jquery.dataTables.js"></script>
-<script src="static/vendor/datatables/dataTables.bootstrap4.js"></script>
-
-<!-- Custom scripts for all pages-->
-<script src="static/js/sb-admin.min.js"></script>
-
-<!-- Demo scripts for this page-->
-<script src="static/js/demo/datatables-demo.js"></script>
-<script src="static/js/demo/chart-area-demo.js"></script>
-
-<!-- boardWrite jQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-
-</body>
-</html>

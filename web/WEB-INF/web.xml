@@ -124,6 +124,15 @@
         <url-pattern>/update.do</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>download</servlet-name>
+        <servlet-class>com.controller.bbs.downloadController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>download</servlet-name>
+        <url-pattern>/download.do</url-pattern>
+    </servlet-mapping>
+
     <!--Filter-->
     <filter>
         <filter-name>tempFilter</filter-name>
